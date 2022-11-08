@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<shop>
+	<caphe>
+		<item>
+			<path>1</path>
+			<name>The Coffee House Sữa Đá</name>
+			<price>39000</price>
+			<discription>Thức uống giúp tỉnh táo tức thì để bắt đầu ngày mới thật hứng khởi. Không đắng khét như cà phê truyền thống, The Coffee House Sữa Đá mang hương vị hài hoà đầy lôi cuốn. Là sự đậm đà của 100% cà phê Arabica Cầu Đất rang vừa tới, biến tấu tinh tế với sữa đặc và kem sữa ngọt ngào cực quyến rũ. Càng hấp dẫn hơn với topping thạch 100% cà phê nguyên chất giúp giữ trọn vị ngon đến ngụm cuối cùng.</discription>
+		</item>
+		<item>
+			<path>2</path>
+			<name>Cà Phê Sữa Đá</name>
+			<price>29000</price>
+			<discription>Cà phê Đắk Lắk nguyên chất được pha phin truyền thống kết hợp với sữa đặc tạo nên hương vị đậm đà, hài hòa giữa vị ngọt đầu lưỡi và vị đắng thanh thoát nơi hậu vị.</discription>
+		</item>
+		<item>
+			<path>3</path>
+			<name>Cà Phê Sữa Nóng</name>
+			<price>35000</price>
+			<discription>Cà phê được pha phin truyền thống kết hợp với sữa đặc tạo nên hương vị đậm đà, hài hòa giữa vị ngọt đầu lưỡi và vị đắng thanh thoát nơi hậu vị.</discription>
+		</item>
+		<item>
+			<path>4</path>
+			<name>Bạc Sỉu</name>
+			<price>25000</price>
+			<discription>Bạc sỉu chính là "Ly sữa trắng kèm một chút cà phê". Thức uống này rất phù hợp những ai vừa muốn trải nghiệm chút vị đắng của cà phê vừa muốn thưởng thức vị ngọt béo ngậy từ sữa.</discription>
+		</item>
+		<item>
+			<path>5</path>
+			<name>Bạc Sỉu Nóng</name>
+			<price>35000</price>
+			<discription>Bạc sỉu chính là "Ly sữa trắng kèm một chút cà phê". Thức uống này rất phù hợp những ai vừa muốn trải nghiệm chút vị đắng của cà phê vừa muốn thưởng thức vị ngọt béo ngậy từ sữa.</discription>
+		</item>
+		<item>
+			<path>6</path>
+			<name>Cà Phê Đen Đá</name>
+			<price>29000</price>
+			<discription>Không ngọt ngào như Bạc sỉu hay Cà phê sữa, Cà phê đen mang trong mình phong vị trầm lắng, thi vị hơn. Người ta thường phải ngồi rất lâu mới cảm nhận được hết hương thơm ngào ngạt, phảng phất mùi cacao và cái đắng mượt mà trôi tuột xuống vòm họng.</discription>
+		</item>
+	</caphe>
+	<snack>
+		<item>
+			<path>1</path>
+			<name>Bánh Mì Que Pate</name>
+			<price>15000</price>
+			<discription>Vỏ bánh mì giòn tan, kết hợp với lớp nhân pate béo béo đậm đà sẽ là lựa chọn lý tưởng nhẹ nhàng để lấp đầy chiếc bụng đói , cho 1 bữa sáng - trưa - chiều - tối của bạn thêm phần thú vị.</discription>
+		</item>
+		<item>
+			<path>2</path>
+			<name>Bánh Mì Que Pate</name>
+			<price>15000</price>
+			<discription>Vỏ bánh mì giòn tan, kết hợp với lớp nhân pate béo béo đậm đà sẽ là lựa chọn lý tưởng nhẹ nhàng để lấp đầy chiếc bụng đói , cho 1 bữa sáng - trưa - chiều - tối của bạn thêm phần thú vị.</discription>
+		</item>
+		<item>
+			<path>3</path>
+			<name>Bánh Mì Que Pate Cay</name>
+			<price>15000</price>
+			<discription>Vỏ bánh mì giòn tan, kết hợp với lớp nhân pate béo béo đậm đà và 1 chút cay cay sẽ là lựa chọn lý tưởng nhẹ nhàng để lấp đầy chiếc bụng đói , cho 1 bữa sáng - trưa - chiều - tối của bạn thêm phần thú vị.</discription>
+		</item>
+		<item>
+			<path>4</path>
+			<name>Bánh Mì VN Thịt Nguội</name>
+			<price>35000</price>
+			<discription>Gói gọn trong ổ bánh mì Việt Nam là từng lớp chả, từng lớp jambon hòa quyện cùng bơ và pate thơm lừng, thêm dưa rau cho bữa sáng đầy năng lượng. *Phần bánh sẽ ngon và đậm đà nhất khi kèm pate. Để đảm bảo hương vị được trọn vẹn, Nhà mong bạn thông cảm vì không thể thay đổi định lượng pate.</discription>
+		</item>
+		<item>
+			<path>5</path>
+			<name>Croissant trứng muối</name>
+			<price>35000</price>
+			<discription>Croissant trứng muối thơm lừng, bên ngoài vỏ bánh giòn hấp dẫn bên trong trứng muối vị ngon khó cưỡng.</discription>
+		</item>
+		<item>
+			<path>6</path>
+			<name>Mochi Kem Phúc Bồn Tử</name>
+			<price>19000</price>
+			<discription>Bao bọc bởi lớp vỏ Mochi dẻo thơm, bên trong là lớp kem lạnh cùng nhân phúc bồn tử ngọt ngào. Gọi 1 chiếc Mochi cho ngày thật tươi mát. Sản phẩm phải bảo quán mát và dùng ngon nhất trong 2h sau khi nhận hàng.</discription>
+		</item>
+	</snack>
+	<traicay>
+		<item>
+			<path>1</path>
+			<name>Trà Sữa Sô Cô La (Nóng)</name>
+			<price>55000</price>
+			<discription>Trong tiết trời se lạnh, còn gì tuyệt hơn khi được nhâm nhi ly Trà Sữa Sô Cô La ấm nóng. Hương vị trà Oolong nướng quen thuộc kết hợp cùng sô cô la ngọt ngào, thêm topping marshmallow mềm mịn, cứ uống là ghiền.</discription>
+		</item>
+		<item>
+			<path>2</path>
+			<name>Trà Sữa Dừa (Nóng)</name>
+			<price>55000</price>
+			<discription>Trà Sữa Dừa ấm nóng, xua tan lạnh lẽo hệt như cái ôm của người thương. Nền trà Oolong nướng đậm hương, êm dịu thêm chút sữa dừa thơm béo, ngọt ngào, tạo nên thức uống ngon khó cưỡng.</discription>
+		</item>
+		<item>
+			<path>3</path>
+			<name>Trà Long Nhãn Hạt Sen</name>
+			<price>15000</price>
+			<discription>Thức uống mang hương vị của nhãn, của sen, của trà Oolong đầy thanh mát cho tất cả các thành viên trong dịp Tết này. An lành, thư thái và đậm đà chính là những gì The Coffee House mong muốn gửi trao đến bạn và gia đình.</discription>
+		</item>
+		<item>
+			<path>4</path>
+			<name>Trà Đào Cam Sả - Đá</name>
+			<price>39000</price>
+			<discription>Vị thanh ngọt của đào, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả chính là điểm sáng làm nên sức hấp dẫn của thức uống này.</discription>
+		</item>
+		<item>
+			<path>5</path>
+			<name>Trà Đào Cam Sả - Nóng</name>
+			<price>35000</price>
+			<discription>Vị thanh ngọt của đào, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả chính là điểm sáng làm nên sức hấp dẫn của thức uống này.</discription>
+		</item>
+		<item>
+			<path>6</path>
+			<name>Trà Hạt Sen - Đá</name>
+			<price>45000</price>
+			<discription>Nền trà oolong hảo hạng kết hợp cùng hạt sen tươi, bùi bùi và lớp foam cheese béo ngậy. Trà hạt sen là thức uống thanh mát, nhẹ nhàng phù hợp cho cả buổi sáng và chiều tối.</discription>
+		</item>
+	</traicay>
+	<tainha>
+		<item>
+			<path>1</path>
+			<name>Thùng Cà Phê Sữa Espresso</name>
+			<price>360000</price>
+			<discription>Được sản xuất theo công nghệ Nhật, Cà Phê Sữa Espresso The Coffee House giữ trọn hương vị đậm đà của 100% cà phê Robusta nguyên chất quyện hoà cùng sữa béo thơm lừng. Bật nắp trải nghiệm ngay chất cà phê mạnh mẽ giúp sảng khoái tức thì, tuôn trào hứng khởi</discription>
+		</item>
+		<item>
+			<path>2</path>
+			<name>Combo 6 Lon Cà Phê Sữa Espresso</name>
+			<price>84000</price>
+			<discription>Được sản xuất theo công nghệ Nhật, Cà Phê Sữa Espresso The Coffee House giữ trọn hương vị đậm đà của 100% cà phê Robusta nguyên chất quyện hoà cùng sữa béo thơm lừng. Bật nắp trải nghiệm ngay chất cà phê mạnh mẽ giúp sảng khoái tức thì, tuôn trào hứng khởi</discription>
+		</item>
+		<item>
+			<path>3</path>
+			<name>Cà Phê Sữa Đá Hòa Tan (10 gói x 22g)</name>
+			<price>44000</price>
+			<discription>Thật dễ dàng để bắt đầu ngày mới với tách cà phê sữa đá sóng sánh, thơm ngon như cà phê pha phin. Vị đắng thanh của cà phê hoà quyện với vị ngọt béo của sữa, giúp bạn luôn tỉnh táo và hứng khởi cho ngày làm việc thật hiệu quả.</discription>
+		</item>
+		<item>
+			<path>4</path>
+			<name>Cà Phê Hoà Tan Đậm Vị Việt (18 gói x 16 gam)</name>
+			<price>50000</price>
+			<discription>Bắt đầu ngày mới với tách cà phê sữa “Đậm vị Việt” mạnh mẽ sẽ giúp bạn luôn tỉnh táo và hứng khởi cho ngày làm việc thật hiệu quả.</discription>
+		</item>
+		<item>
+			<path>5</path>
+			<name>Cà Phê Sữa Đá Hòa Tan Túi 25x22G</name>
+			<price>100000</price>
+			<discription>Thật dễ dàng để bắt đầu ngày mới với tách cà phê sữa đá sóng sánh, thơm ngon như cà phê pha phin. Vị đắng thanh của cà phê hoà quyện với vị ngọt béo của sữa, giúp bạn luôn tỉnh táo và hứng khởi cho ngày làm việc thật hiệu quả.</discription>
+		</item>
+		<item>
+			<path>6</path>
+			<name>Cà Phê Hòa Tan Đậm Vị Việt Túi 40x16G</name>
+			<price>100000</price>
+			<discription>Bắt đầu ngày mới với tách cà phê sữa “Đậm vị Việt” mạnh mẽ sẽ giúp bạn luôn tỉnh táo và hứng khởi cho ngày làm việc thật hiệu quả.</discription>
+		</item>
+	</tainha>
+	<tea>
+		<item>
+			<path>1</path>
+			<name>Hi-Tea Phúc Bồn Tử Mandarin</name>
+			<price>50000</price>
+			<discription>Nền trà Hibiscus thanh mát, quyện vị chua chua ngọt ngọt của phúc bồn tử 100% tự nhiên cùng quýt mọng nước mang đến cảm giác sảng khoái tức thì.</discription>
+		</item>
+		<item>
+			<path>2</path>
+			<name>Hi-Tea Dâu Tây Mận Muối Aloe Vera</name>
+			<price>50000</price>
+			<discription>Sự kết hợp độc đáo giữa 3 sắc thái hương vị khác nhau: trà hoa Hibiscus chua thanh, Mận muối mặn mặn và Dâu tây tươi Đà Lạt cô đặc ngọt dịu. Ngoài ra, topping Aloe Vera tươi mát, ngon ngất ngây, đẹp đắm say, hứa hẹn sẽ khuấy đảo hè này.</discription>
+		</item>
+		<item>
+			<path>3</path>
+			<name>Hi-Tea Xoài Aloe Vera</name>
+			<price>50000</price>
+			<discription>Vị ngọt thanh, thơm phức từ xoài chín mọng kết hợp cùng vị chua đặc trưng của trà hoa Hibiscus tự nhiên, sẽ khiến bạn khó lòng quên được thức uống “chân ái” mùa hè này. Đặc biệt, topping Aloe Vera tự nhiên không chỉ nhâm nhi vui miệng mà còn giúp bạn “nâng tầm nhan sắc”.</discription>
+		</item>
+		<item>
+			<path>4</path>
+			<name>Hi-Tea Yuzu Trân Châu</name>
+			<price>50000</price>
+			<discription>Không chỉ nổi bật với sắc đỏ đặc trưng từ trà hoa Hibiscus, Hi-Tea Yuzu còn gây ấn tượng với topping Yuzu (quýt Nhật) lạ miệng, kết hợp cùng trân châu trắng dai giòn sần sật, nhai vui vui.</discription>
+		</item>
+		<item>
+			<path>5</path>
+			<name>Hi-Tea Vải</name>
+			<price>50000</price>
+			<discription>Chút ngọt ngào của Vải, mix cùng vị chua thanh tao từ trà hoa Hibiscus, mang đến cho bạn thức uống đúng chuẩn vừa ngon, vừa healthy.</discription>
+		</item>
+		<item>
+			<path>6</path>
+			<name>Hi-Tea Đào</name>
+			<price>50000</price>
+			<discription>Sự kết hợp ăn ý giữa Đào cùng trà hoa Hibiscus, tạo nên tổng thể hài hoà dễ gây “thương nhớ” cho team thích món thanh mát, có vị chua nhẹ.</discription>
+		</item>
+	</tea>
+</shop>

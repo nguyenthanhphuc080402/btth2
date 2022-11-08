@@ -1,0 +1,14 @@
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\btth2.exe.config
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\btth2.exe
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\btth2.pdb
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.csproj.AssemblyReference.cache
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.csproj.SuggestedBindingRedirects.cache
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.Form1.resources
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.Properties.Resources.resources
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.csproj.GenerateResource.cache
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.csproj.CoreCompileInputs.cache
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.exe
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.pdb
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\DotNetSkin.SkinControls.dll
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.csproj.CopyComplete
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.Form2.resources
