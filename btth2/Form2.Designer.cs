@@ -32,14 +32,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pic_1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lab_sl = new System.Windows.Forms.Label();
             this.lab_discription = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lab_price = new System.Windows.Forms.Label();
             this.lab_name = new System.Windows.Forms.Label();
+            this.skinButton1 = new DotNetSkin.SkinControls.SkinButton();
+            this.skinButton2 = new DotNetSkin.SkinControls.SkinButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -67,27 +69,40 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.skinButton2);
+            this.panel2.Controls.Add(this.skinButton1);
+            this.panel2.Controls.Add(this.lab_sl);
             this.panel2.Controls.Add(this.lab_discription);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lab_price);
             this.panel2.Controls.Add(this.lab_name);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(668, 72);
+            this.panel2.Location = new System.Drawing.Point(601, 72);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(562, 512);
+            this.panel2.Size = new System.Drawing.Size(645, 601);
             this.panel2.TabIndex = 1;
+            // 
+            // lab_sl
+            // 
+            this.lab_sl.AutoSize = true;
+            this.lab_sl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_sl.Location = new System.Drawing.Point(454, 191);
+            this.lab_sl.Name = "lab_sl";
+            this.lab_sl.Size = new System.Drawing.Size(34, 37);
+            this.lab_sl.TabIndex = 13;
+            this.lab_sl.Text = "1";
             // 
             // lab_discription
             // 
             this.lab_discription.CausesValidation = false;
+            this.lab_discription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_discription.ForeColor = System.Drawing.Color.Black;
-            this.lab_discription.Location = new System.Drawing.Point(48, 314);
+            this.lab_discription.Location = new System.Drawing.Point(41, 314);
             this.lab_discription.Name = "lab_discription";
-            this.lab_discription.Size = new System.Drawing.Size(469, 184);
+            this.lab_discription.Size = new System.Drawing.Size(565, 184);
             this.lab_discription.TabIndex = 12;
             this.lab_discription.Text = "Cà phê được pha phin truyền thống kết hợp với sữa đặc tạo nên hương vị đậm đà, hà" +
     "i hòa giữa vị ngọt đầu lưỡi và vị đắng thanh thoát nơi hậu vị.";
@@ -96,47 +111,39 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(260, 179);
+            this.button2.Location = new System.Drawing.Point(377, 179);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 60);
             this.button2.TabIndex = 11;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(404, 179);
+            this.button1.Location = new System.Drawing.Point(521, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 60);
             this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(45, 122);
+            this.label2.Location = new System.Drawing.Point(41, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 39);
             this.label2.TabIndex = 8;
             this.label2.Text = "Giá:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(338, 184);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 44);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "1";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(45, 188);
+            this.label1.Location = new System.Drawing.Point(41, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 39);
             this.label1.TabIndex = 5;
@@ -147,7 +154,7 @@
             // 
             this.lab_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_price.ForeColor = System.Drawing.Color.Black;
-            this.lab_price.Location = new System.Drawing.Point(253, 122);
+            this.lab_price.Location = new System.Drawing.Point(377, 122);
             this.lab_price.Name = "lab_price";
             this.lab_price.Size = new System.Drawing.Size(166, 39);
             this.lab_price.TabIndex = 4;
@@ -155,13 +162,32 @@
             // 
             // lab_name
             // 
-            this.lab_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_name.AutoSize = true;
+            this.lab_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lab_name.Location = new System.Drawing.Point(41, 28);
             this.lab_name.Name = "lab_name";
-            this.lab_name.Size = new System.Drawing.Size(433, 82);
+            this.lab_name.Size = new System.Drawing.Size(317, 52);
             this.lab_name.TabIndex = 3;
             this.lab_name.Text = "Cà phê sữa đá";
+            // 
+            // skinButton1
+            // 
+            this.skinButton1.Location = new System.Drawing.Point(413, 511);
+            this.skinButton1.Name = "skinButton1";
+            this.skinButton1.Size = new System.Drawing.Size(193, 69);
+            this.skinButton1.TabIndex = 3;
+            this.skinButton1.Text = "Thêm vào giỏ hàng";
+            this.skinButton1.UseVisualStyleBackColor = true;
+            // 
+            // skinButton2
+            // 
+            this.skinButton2.Location = new System.Drawing.Point(24, 511);
+            this.skinButton2.Name = "skinButton2";
+            this.skinButton2.Size = new System.Drawing.Size(193, 69);
+            this.skinButton2.TabIndex = 14;
+            this.skinButton2.Text = "Xem giỏ hàng";
+            this.skinButton2.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -175,6 +201,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
@@ -194,9 +221,11 @@
         private System.Windows.Forms.Label lab_price;
         private System.Windows.Forms.Label lab_name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lab_discription;
+        private System.Windows.Forms.Label lab_sl;
+        private DotNetSkin.SkinControls.SkinButton skinButton2;
+        private DotNetSkin.SkinControls.SkinButton skinButton1;
     }
 }

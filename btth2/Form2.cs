@@ -14,8 +14,9 @@ namespace btth2
 {
     public partial class Form2 : Form
     {
-        int stt;
-        string tag;
+        public int stt;
+        public string tag;
+        public int sl = 1;
         public Form2(int stt_, string tag_)
         {
             this.stt = stt_;
@@ -41,10 +42,17 @@ namespace btth2
             var xmlDoc = XDocument.Load(@"..//..//data.xml");
             var data_pre = xmlDoc.Descendants(XMLTag);
             var data = data_pre.Descendants("item").Where(it => (int)it.Element("path") == stt);
-            
-            foreach(var item in data)
+            foreach (var item in data)
             {
-                lab_name.Text = item.Value;
+                var name = (string)item.Element("name");
+                var path = (string)item.Element("path");
+                var price = (string)item.Element("price");
+                var discription = (string)item.Element("discription");
+                lab_price.Text = price + "đ";
+                pic_1.BackgroundImage = Image.FromFile(@"..//..//img/" + XMLTag + "/" + path + ".jpg");
+                lab_discription.Text = discription;
+                lab_name.Text = name;
+                this.Text = name;
             }
         }
 
@@ -56,6 +64,19 @@ namespace btth2
         private void Form2_Load(object sender, EventArgs e)
         {
             loadCategory(tag, stt);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sl++;
+            lab_sl.Text = sl.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (sl == 1) return;
+            sl--;
+            lab_sl.Text = sl.ToString();
         }
     }
 }
