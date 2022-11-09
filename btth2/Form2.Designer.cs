@@ -32,19 +32,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pic_1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.skinButton2 = new DotNetSkin.SkinControls.SkinButton();
+            this.skinButton1 = new DotNetSkin.SkinControls.SkinButton();
             this.lab_sl = new System.Windows.Forms.Label();
             this.lab_discription = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lab_price = new System.Windows.Forms.Label();
             this.lab_name = new System.Windows.Forms.Label();
-            this.skinButton1 = new DotNetSkin.SkinControls.SkinButton();
-            this.skinButton2 = new DotNetSkin.SkinControls.SkinButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,12 +71,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.skinButton2);
             this.panel2.Controls.Add(this.skinButton1);
             this.panel2.Controls.Add(this.lab_sl);
             this.panel2.Controls.Add(this.lab_discription);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lab_price);
@@ -84,6 +86,50 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(645, 601);
             this.panel2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(377, 179);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(521, 179);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // skinButton2
+            // 
+            this.skinButton2.Location = new System.Drawing.Point(24, 511);
+            this.skinButton2.Name = "skinButton2";
+            this.skinButton2.Size = new System.Drawing.Size(193, 69);
+            this.skinButton2.TabIndex = 14;
+            this.skinButton2.Text = "Xem giỏ hàng";
+            this.skinButton2.UseVisualStyleBackColor = true;
+            this.skinButton2.Click += new System.EventHandler(this.skinButton2_Click);
+            // 
+            // skinButton1
+            // 
+            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.skinButton1.Location = new System.Drawing.Point(413, 511);
+            this.skinButton1.Name = "skinButton1";
+            this.skinButton1.Size = new System.Drawing.Size(193, 69);
+            this.skinButton1.TabIndex = 3;
+            this.skinButton1.Text = "Thêm vào giỏ hàng";
+            this.skinButton1.UseVisualStyleBackColor = false;
+            this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
             // lab_sl
             // 
@@ -106,28 +152,6 @@
             this.lab_discription.TabIndex = 12;
             this.lab_discription.Text = "Cà phê được pha phin truyền thống kết hợp với sữa đặc tạo nên hương vị đậm đà, hà" +
     "i hòa giữa vị ngọt đầu lưỡi và vị đắng thanh thoát nơi hậu vị.";
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(377, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(521, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 60);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -171,24 +195,6 @@
             this.lab_name.TabIndex = 3;
             this.lab_name.Text = "Cà phê sữa đá";
             // 
-            // skinButton1
-            // 
-            this.skinButton1.Location = new System.Drawing.Point(413, 511);
-            this.skinButton1.Name = "skinButton1";
-            this.skinButton1.Size = new System.Drawing.Size(193, 69);
-            this.skinButton1.TabIndex = 3;
-            this.skinButton1.Text = "Thêm vào giỏ hàng";
-            this.skinButton1.UseVisualStyleBackColor = true;
-            // 
-            // skinButton2
-            // 
-            this.skinButton2.Location = new System.Drawing.Point(24, 511);
-            this.skinButton2.Name = "skinButton2";
-            this.skinButton2.Size = new System.Drawing.Size(193, 69);
-            this.skinButton2.TabIndex = 14;
-            this.skinButton2.Text = "Xem giỏ hàng";
-            this.skinButton2.UseVisualStyleBackColor = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -208,6 +214,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,11 +229,11 @@
         private System.Windows.Forms.Label lab_price;
         private System.Windows.Forms.Label lab_name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lab_discription;
         private System.Windows.Forms.Label lab_sl;
         private DotNetSkin.SkinControls.SkinButton skinButton2;
         private DotNetSkin.SkinControls.SkinButton skinButton1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

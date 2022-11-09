@@ -17,6 +17,13 @@ namespace btth2
         public int stt;
         public string tag;
         public int sl = 1;
+        public string name = "";
+        public string path = "";
+        public string price = "";
+        public string discription = "";
+
+        public item i = new item();
+        public orders o = new orders();
         public Form2(int stt_, string tag_)
         {
             this.stt = stt_;
@@ -26,28 +33,15 @@ namespace btth2
 
         public void loadCategory(string XMLTag, int stt)
         {
-            //XmlDocument xdoc = new XmlDocument();
-            //xdoc.Load(@"..//..//data.xml");
-            //XmlNodeList nodeList;
-            //try
-            //{
-            //    nodeList = xdoc.DocumentElement.SelectNodes("/shop/" + XMLTag + "/item");
-            //    List<string> listName = new List<string>();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-
             var xmlDoc = XDocument.Load(@"..//..//data.xml");
             var data_pre = xmlDoc.Descendants(XMLTag);
             var data = data_pre.Descendants("item").Where(it => (int)it.Element("path") == stt);
             foreach (var item in data)
             {
-                var name = (string)item.Element("name");
-                var path = (string)item.Element("path");
-                var price = (string)item.Element("price");
-                var discription = (string)item.Element("discription");
+                name = (string)item.Element("name");
+                path = (string)item.Element("path");
+                price = (string)item.Element("price");
+                discription = (string)item.Element("discription");
                 lab_price.Text = price + "đ";
                 pic_1.BackgroundImage = Image.FromFile(@"..//..//img/" + XMLTag + "/" + path + ".jpg");
                 lab_discription.Text = discription;
@@ -66,17 +60,31 @@ namespace btth2
             loadCategory(tag, stt);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             sl++;
             lab_sl.Text = sl.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (sl == 1) return;
             sl--;
             lab_sl.Text = sl.ToString();
+        }
+
+        private void skinButton1_Click(object sender, EventArgs e)
+        {
+            o.name = name;
+            o.price = price;
+            o.Sl = sl.ToString();
+            i.Them(o);
+        }
+
+        private void skinButton2_Click(object sender, EventArgs e)
+        {
+            Form3 page = new Form3();
+            page.Show();
         }
     }
 }

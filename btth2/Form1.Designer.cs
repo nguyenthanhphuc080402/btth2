@@ -164,10 +164,11 @@
             // 
             // lab6
             // 
-            this.lab6.Location = new System.Drawing.Point(24, 206);
+            this.lab6.Location = new System.Drawing.Point(54, 206);
             this.lab6.Name = "lab6";
             this.lab6.Size = new System.Drawing.Size(200, 27);
             this.lab6.TabIndex = 1;
+            this.lab6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_img6
             // 
@@ -190,10 +191,11 @@
             // 
             // lab4
             // 
-            this.lab4.Location = new System.Drawing.Point(24, 206);
+            this.lab4.Location = new System.Drawing.Point(54, 206);
             this.lab4.Name = "lab4";
             this.lab4.Size = new System.Drawing.Size(200, 27);
             this.lab4.TabIndex = 1;
+            this.lab4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_img4
             // 
@@ -216,10 +218,11 @@
             // 
             // lab2
             // 
-            this.lab2.Location = new System.Drawing.Point(24, 206);
+            this.lab2.Location = new System.Drawing.Point(54, 206);
             this.lab2.Name = "lab2";
             this.lab2.Size = new System.Drawing.Size(200, 27);
             this.lab2.TabIndex = 1;
+            this.lab2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_img2
             // 
@@ -242,10 +245,11 @@
             // 
             // lab5
             // 
-            this.lab5.Location = new System.Drawing.Point(24, 206);
+            this.lab5.Location = new System.Drawing.Point(54, 206);
             this.lab5.Name = "lab5";
             this.lab5.Size = new System.Drawing.Size(200, 27);
             this.lab5.TabIndex = 1;
+            this.lab5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_img5
             // 
@@ -268,10 +272,11 @@
             // 
             // lab3
             // 
-            this.lab3.Location = new System.Drawing.Point(24, 206);
+            this.lab3.Location = new System.Drawing.Point(54, 206);
             this.lab3.Name = "lab3";
             this.lab3.Size = new System.Drawing.Size(200, 27);
             this.lab3.TabIndex = 1;
+            this.lab3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_img3
             // 
@@ -294,10 +299,11 @@
             // 
             // lab1
             // 
-            this.lab1.Location = new System.Drawing.Point(24, 206);
+            this.lab1.Location = new System.Drawing.Point(54, 206);
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(200, 27);
             this.lab1.TabIndex = 1;
+            this.lab1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_img1
             // 

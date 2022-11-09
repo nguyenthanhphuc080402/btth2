@@ -12,3 +12,4 @@ D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.pdb
 D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\DotNetSkin.SkinControls.dll
 D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.csproj.CopyComplete
 D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.Form2.resources
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.Form3.resources
