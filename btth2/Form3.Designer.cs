@@ -39,11 +39,13 @@
             this.skinRadioButton2 = new DotNetSkin.SkinControls.SkinRadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.skinButton2 = new DotNetSkin.SkinControls.SkinButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv
             // 
+            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv.CausesValidation = false;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -63,28 +65,24 @@
             this.Column1.HeaderText = "Tên món";
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Số lượng";
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Giá";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Tổng tiền";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
             // 
             // skinButton1
             // 
@@ -150,11 +148,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Địa chỉ giao hàng";
             // 
+            // skinButton2
+            // 
+            this.skinButton2.Location = new System.Drawing.Point(1031, 265);
+            this.skinButton2.Name = "skinButton2";
+            this.skinButton2.Size = new System.Drawing.Size(146, 51);
+            this.skinButton2.TabIndex = 6;
+            this.skinButton2.Text = "xóa";
+            this.skinButton2.UseVisualStyleBackColor = true;
+            this.skinButton2.Click += new System.EventHandler(this.skinButton2_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 664);
+            this.Controls.Add(this.skinButton2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.skinRadioButton2);
             this.Controls.Add(this.skinRadioButton1);
@@ -186,5 +195,6 @@
         private DotNetSkin.SkinControls.SkinRadioButton skinRadioButton2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private DotNetSkin.SkinControls.SkinButton skinButton2;
     }
 }

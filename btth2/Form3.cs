@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace btth2
 {
@@ -15,7 +16,7 @@ namespace btth2
     {
         public XmlDocument doc = new XmlDocument();
         public XmlElement root;
-        private string fileName = @"..//..//cart.xml";
+        private string fileName = @"..//..//xml/cart.xml";
         public Form3()
         {
             InitializeComponent();
@@ -48,6 +49,12 @@ namespace btth2
         private void skinButton1_Click(object sender, EventArgs e)
         {
             i.xoaAll();
+        }
+
+        private void skinButton2_Click(object sender, EventArgs e)
+        {
+            int rowIdex = dgv.CurrentCell.RowIndex;
+            dgv.Rows.RemoveAt(rowIdex);
         }
     }
 }

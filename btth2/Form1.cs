@@ -23,7 +23,7 @@ namespace btth2
         public void loadCategory(string XMLTag)
         {
             XmlDocument xdoc = new XmlDocument();
-            xdoc.Load(@"..//..//data.xml");
+            xdoc.Load(@"..//..//xml/data.xml");
             XmlNodeList nodeList;
             try
             {
@@ -66,32 +66,27 @@ namespace btth2
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            loadCategory("caphe");
-            tag = "caphe";
+
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            loadCategory("traicay");
-            tag = "traicay";
+
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            loadCategory("snack");
-            tag = "snack";
+
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            loadCategory("tea");
-            tag = "tea";
+
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            loadCategory("tainha");
-            tag = "tainha";
+
         }
 
         private void btn_img1_Click(object sender, EventArgs e)
@@ -126,6 +121,36 @@ namespace btth2
         {
             Form2 page = new Form2(6, tag);
             page.Show();
+        }
+
+        private void btn5_Click_1(object sender, EventArgs e)
+        {
+            loadCategory("tainha");
+            tag = "tainha";
+        }
+
+        private void btn1_Click_1(object sender, EventArgs e)
+        {
+            loadCategory("caphe");
+            tag = "caphe";
+        }
+
+        private void btn2_Click_1(object sender, EventArgs e)
+        {
+            loadCategory("traicay");
+            tag = "traicay";
+        }
+
+        private void btn3_Click_1(object sender, EventArgs e)
+        {
+            loadCategory("snack");
+            tag = "snack";
+        }
+
+        private void btn4_Click_1(object sender, EventArgs e)
+        {
+            loadCategory("tea");
+            tag = "tea";
         }
     }
 }

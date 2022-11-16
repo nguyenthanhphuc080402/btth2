@@ -13,7 +13,7 @@ namespace btth2
     {
         public XmlDocument doc = new XmlDocument();
         public XmlElement root;
-        private string fileName = @"..//..//cart.xml";
+        private string fileName = @"..//..//xml/cart.xml";
         public item()
         {
             doc.Load(fileName);

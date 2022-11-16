@@ -33,7 +33,7 @@ namespace btth2
 
         public void loadCategory(string XMLTag, int stt)
         {
-            var xmlDoc = XDocument.Load(@"..//..//data.xml");
+            var xmlDoc = XDocument.Load(@"..//..//xml/data.xml");
             var data_pre = xmlDoc.Descendants(XMLTag);
             var data = data_pre.Descendants("item").Where(it => (int)it.Element("path") == stt);
             foreach (var item in data)
@@ -58,6 +58,28 @@ namespace btth2
         private void Form2_Load(object sender, EventArgs e)
         {
             loadCategory(tag, stt);
+            if (tag == "caphe")
+            {
+                this.BackgroundImage = Image.FromFile(@"..//..//img/background/3.png");
+            }else if( tag == "traicay")
+            {
+                this.BackgroundImage = Image.FromFile(@"..//..//img/background/6.png");
+
+            }
+            else if (tag == "tea")
+            {
+                this.BackgroundImage = Image.FromFile(@"..//..//img/background/11.png");
+
+            }
+            else if (tag == "tainha")
+            {
+                this.BackgroundImage = Image.FromFile(@"..//..//img/background/9.png");
+
+            }
+            else
+            {
+                this.BackgroundImage = Image.FromFile(@"..//..//img/background/10.png");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
