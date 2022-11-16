@@ -24,6 +24,8 @@ namespace btth2
 
         public item i = new item();
         public orders o = new orders();
+
+        //DataTable dt = new DataTable(@"..//..//ds.xsd");
         public Form2(int stt_, string tag_)
         {
             this.stt = stt_;

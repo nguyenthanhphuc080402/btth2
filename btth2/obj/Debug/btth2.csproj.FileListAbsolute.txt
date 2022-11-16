@@ -65,3 +65,4 @@ D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\pt\Microsoft.ReportViewer.WinF
 D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\HK1 2022-2023\CS511\BTTH\btth2\btth2\obj\Debug\btth2.Form4.resources
