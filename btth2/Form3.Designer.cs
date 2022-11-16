@@ -38,13 +38,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.skinRadioButton1 = new DotNetSkin.SkinControls.SkinRadioButton();
             this.skinRadioButton2 = new DotNetSkin.SkinControls.SkinRadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.skinButton2 = new DotNetSkin.SkinControls.SkinButton();
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ds = new btth2.ds();
             this.form3BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBindingSource)).BeginInit();
@@ -140,13 +144,13 @@
             this.skinRadioButton2.Text = "Thanh toán trực tuyến";
             this.skinRadioButton2.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txt_name
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(333, 310);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(507, 30);
-            this.textBox1.TabIndex = 5;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.Location = new System.Drawing.Point(333, 310);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(507, 30);
+            this.txt_name.TabIndex = 5;
             // 
             // label2
             // 
@@ -154,9 +158,10 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 313);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 25);
+            this.label2.Size = new System.Drawing.Size(160, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Địa chỉ giao hàng";
+            this.label2.Text = "Tên khách hàng:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // skinButton2
             // 
@@ -187,13 +192,53 @@
             // 
             this.form3BindingSource.DataSource = typeof(btth2.Form3);
             // 
+            // txt_address
+            // 
+            this.txt_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_address.Location = new System.Drawing.Point(333, 379);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(507, 30);
+            this.txt_address.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(24, 382);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(168, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Địa chỉ giao hàng:";
+            // 
+            // txt_phone
+            // 
+            this.txt_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_phone.Location = new System.Drawing.Point(333, 460);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(507, 30);
+            this.txt_phone.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(24, 463);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Số điện thoại:";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 664);
+            this.Controls.Add(this.txt_phone);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_address);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.skinButton2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.skinRadioButton2);
             this.Controls.Add(this.skinRadioButton1);
             this.Controls.Add(this.label2);
@@ -226,12 +271,16 @@
         private System.Windows.Forms.Label label1;
         private DotNetSkin.SkinControls.SkinRadioButton skinRadioButton1;
         private DotNetSkin.SkinControls.SkinRadioButton skinRadioButton2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label2;
         private DotNetSkin.SkinControls.SkinButton skinButton2;
         private ds ds;
         private System.Windows.Forms.BindingSource dsBindingSource;
         private System.Windows.Forms.BindingSource dataTable1BindingSource;
         private System.Windows.Forms.BindingSource form3BindingSource;
+        private System.Windows.Forms.TextBox txt_address;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_phone;
+        private System.Windows.Forms.Label label4;
     }
 }

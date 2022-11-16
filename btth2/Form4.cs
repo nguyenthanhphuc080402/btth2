@@ -27,14 +27,18 @@ namespace btth2
             dt.Columns.Add("Gia", typeof(string));
             dt.Columns.Add("TT", typeof(string));
 
-            dt.Rows.Add("1", "Nước tẩy rửa đa năng", "1", "123.000", "123.000");
-            dt.Rows.Add("2", "Nước suối lavie chai 1 lít", "1", "123.000", "123.000");
-            dt.Rows.Add("3", "Nước tăng lực String", "1", "123.000", "123.000");
-            dt.Rows.Add("4", "Dầu ăn Simply chai 5 lít", "1", "123.000", "123.000");
-            dt.Rows.Add("5", "Bánh gạo One One", "1", "123.000", "123.000");
+            for (int i = 0; i < Form1.ShoppingInfo.GlobalName.Count; i++)
+            {
+                string name = Form1.ShoppingInfo.GlobalName[i];
+                int qualy = Form1.ShoppingInfo.GlobalQuantity[i];
+                int price = Convert.ToInt32(Form1.ShoppingInfo.GlobalPrice[i]);
+                string tong = Convert.ToString(qualy * price);
+                dt.Rows.Add(Convert.ToString(i+1), name, Convert.ToString(qualy), Convert.ToString(price), tong);
+            }
+
 
             reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
-            reportViewer1.LocalReport.ReportPath = "Report2.rdlc"; //để file report trong Debug của project
+            reportViewer1.LocalReport.ReportPath = "..//..//Report2.rdlc"; //để file report trong Debug của project
 
             ReportDataSource dts = new ReportDataSource();
             dts.Name = "DataSet1"; //Đặt đúng tên khi đặt trong report -- có tên mặc định là DataSet1
@@ -43,18 +47,22 @@ namespace btth2
             reportViewer1.LocalReport.DataSources.Add(dts);
 
             ReportParameter para1 = new ReportParameter();
-            para1.Name = "TenKH"; //Đặt đúng tên khi đặt trong report
-            para1.Values.Add("Nguyễn Văn An");
-            //ReportParameter para2 = new ReportParameter();
-            //para2.Name = "TenKH";
-            //para2.Values.Add(TenKH);
-            //ReportParameter para3 = new ReportParameter();
-            //para3.Name = "SoHD";
-            //para3.Values.Add(SoHD);
-            //ReportParameter para4 = new ReportParameter();
-            //para4.Name = "NgayIn";
-            //para4.Values.Add(NgayIn);
-            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { para1/*, para2, para3, para4*/ });
+            para1.Name = "name";
+            para1.Values.Add(Form3.info.GlobalName);
+
+            ReportParameter para2 = new ReportParameter();
+            para2.Name = "address";
+            para2.Values.Add(Form3.info.GlobalAddress);
+
+            ReportParameter para3 = new ReportParameter();
+            para3.Name = "phonenumber";
+            para3.Values.Add(Form3.info.GlobalPhoneNumber);
+
+            ReportParameter para4 = new ReportParameter();
+            para4.Name = "ship";
+            para4.Values.Add(Form3.info.GlobalShip);
+
+            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { para1, para2, para3, para4});
         }
 
         private void Form4_Load(object sender, EventArgs e)

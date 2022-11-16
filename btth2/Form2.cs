@@ -99,10 +99,22 @@ namespace btth2
 
         private void skinButton1_Click(object sender, EventArgs e)
         {
+            //Thêm vào giỏ
             o.name = name;
             o.price = price;
             o.Sl = sl.ToString();
-            i.Them(o);
+            //i.Them(o);
+            if (Form1.ShoppingInfo.GlobalName.Contains(name) == false)
+            {
+                Form1.ShoppingInfo.GlobalName.Add(name);
+                Form1.ShoppingInfo.GlobalPrice.Add(price);
+                Form1.ShoppingInfo.GlobalQuantity.Add(sl);
+            }
+            else
+            {
+                int index = Form1.ShoppingInfo.GlobalName.IndexOf(name);
+                Form1.ShoppingInfo.GlobalQuantity[index] += sl;
+            }
         }
 
         private void skinButton2_Click(object sender, EventArgs e)

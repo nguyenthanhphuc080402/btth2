@@ -20,6 +20,49 @@ namespace btth2
             InitializeComponent();
         }
 
+        public static class ShoppingInfo
+        {
+            private static List<string> Name = new List<string>();
+            private static List<string> Price = new List<string>();
+            private static List<int> Quantity = new List<int>();
+
+            public static List<string> GlobalName
+            {
+                get
+                {
+                    return Name;
+                }
+                set
+                {
+                    Name.Add(value.ToString());
+                }
+            }
+
+            public static List<string> GlobalPrice
+            {
+                get
+                {
+                    return Price;
+                }
+                set
+                {
+                    Price.Add(value.ToString());
+                }
+            }
+
+            public static List<int> GlobalQuantity
+            {
+                get
+                {
+                    return Quantity;
+                }
+                set
+                {
+                    Quantity.Add(Int32.Parse(value.ToString()));
+                }
+            }
+        }
+
         public void loadCategory(string XMLTag)
         {
             XmlDocument xdoc = new XmlDocument();
