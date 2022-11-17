@@ -44,7 +44,8 @@ namespace btth2
                 path = (string)item.Element("path");
                 price = (string)item.Element("price");
                 discription = (string)item.Element("discription");
-                lab_price.Text = price + "đ";
+                lab_price.Text = price;
+                //lab_price.Text = string.Format("{0:0.00}", price.TrimStart(new char[] { '0' }));
                 pic_1.BackgroundImage = Image.FromFile(@"..//..//img/" + XMLTag + "/" + path + ".jpg");
                 lab_discription.Text = discription;
                 lab_name.Text = name;
@@ -59,6 +60,7 @@ namespace btth2
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            lbl_count.Text = Convert.ToString(Form1.ShoppingInfo.GlobalName.Count);
             loadCategory(tag, stt);
             if (tag == "caphe")
             {
@@ -100,9 +102,9 @@ namespace btth2
         private void skinButton1_Click(object sender, EventArgs e)
         {
             //Thêm vào giỏ
-            o.name = name;
-            o.price = price;
-            o.Sl = sl.ToString();
+            //o.name = name;
+            //o.price = price;
+            //o.Sl = sl.ToString();
             //i.Them(o);
             if (Form1.ShoppingInfo.GlobalName.Contains(name) == false)
             {
@@ -115,6 +117,7 @@ namespace btth2
                 int index = Form1.ShoppingInfo.GlobalName.IndexOf(name);
                 Form1.ShoppingInfo.GlobalQuantity[index] += sl;
             }
+            lbl_count.Text = Convert.ToString(Form1.ShoppingInfo.GlobalName.Count);
         }
 
         private void skinButton2_Click(object sender, EventArgs e)

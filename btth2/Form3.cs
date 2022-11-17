@@ -18,6 +18,7 @@ namespace btth2
         public XmlDocument doc = new XmlDocument();
         public XmlElement root;
         private string fileName = @"..//..//xml/cart.xml";
+        private double tongAll = 0;
         public Form3()
         {
             InitializeComponent();
@@ -56,6 +57,9 @@ namespace btth2
 
         private void Form3_Load(object sender, EventArgs e)
         {
+
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(137, 212, 238);
             //dgv.Rows.Clear();
             //dgv.ColumnCount = 4;
 
@@ -89,7 +93,9 @@ namespace btth2
                 dgv.Rows[sd].Cells[2].Value = Form1.ShoppingInfo.GlobalPrice[i];
                 dgv.Rows[sd].Cells[3].Value = tong.ToString();
                 sd++;
+                tongAll += tong;
             }
+            lbl_tong.Text = tongAll.ToString();
         }
         public item i = new item();
 
@@ -114,6 +120,10 @@ namespace btth2
         {
             int rowIdex = dgv.CurrentCell.RowIndex;
             string name = dgv.Rows[rowIdex].Cells[0].Value.ToString();
+            double price = Convert.ToDouble(dgv.Rows[rowIdex].Cells[2].Value.ToString());
+            double sl = Convert.ToDouble(dgv.Rows[rowIdex].Cells[1].Value.ToString());
+            tongAll = tongAll - price* sl;
+            lbl_tong.Text = tongAll.ToString();
             int x = Form1.ShoppingInfo.GlobalName.IndexOf(name);
             Form1.ShoppingInfo.GlobalName.RemoveAt(x);
             Form1.ShoppingInfo.GlobalPrice.RemoveAt(x);

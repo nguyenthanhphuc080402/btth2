@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lab_price = new System.Windows.Forms.Label();
             this.lab_name = new System.Windows.Forms.Label();
+            this.lbl_count = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,6 +72,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.lbl_count);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.skinButton2);
@@ -195,6 +197,17 @@
             this.lab_name.TabIndex = 3;
             this.lab_name.Text = "Cà phê sữa đá";
             // 
+            // lbl_count
+            // 
+            this.lbl_count.AutoSize = true;
+            this.lbl_count.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_count.ForeColor = System.Drawing.Color.Red;
+            this.lbl_count.Location = new System.Drawing.Point(214, 489);
+            this.lbl_count.Name = "lbl_count";
+            this.lbl_count.Size = new System.Drawing.Size(40, 46);
+            this.lbl_count.TabIndex = 17;
+            this.lbl_count.Text = "4";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -234,5 +247,6 @@
         private DotNetSkin.SkinControls.SkinButton skinButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbl_count;
     }
 }

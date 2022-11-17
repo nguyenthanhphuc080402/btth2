@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +45,13 @@
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ds = new btth2.ds();
-            this.form3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txt_address = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_phone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.form3BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_tong = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBindingSource)).BeginInit();
@@ -60,6 +63,7 @@
             // 
             this.dgv.AllowUserToAddRows = false;
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgv.CausesValidation = false;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -100,17 +104,19 @@
             // 
             // skinButton1
             // 
-            this.skinButton1.Location = new System.Drawing.Point(1011, 412);
+            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton1.Location = new System.Drawing.Point(980, 432);
             this.skinButton1.Name = "skinButton1";
             this.skinButton1.Size = new System.Drawing.Size(235, 69);
             this.skinButton1.TabIndex = 1;
             this.skinButton1.Text = "Thanh Toán";
-            this.skinButton1.UseVisualStyleBackColor = true;
+            this.skinButton1.UseVisualStyleBackColor = false;
             this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 248);
             this.label1.Name = "label1";
@@ -155,6 +161,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 313);
             this.label2.Name = "label2";
@@ -165,12 +172,13 @@
             // 
             // skinButton2
             // 
+            this.skinButton2.BackColor = System.Drawing.Color.Transparent;
             this.skinButton2.Location = new System.Drawing.Point(1031, 265);
             this.skinButton2.Name = "skinButton2";
             this.skinButton2.Size = new System.Drawing.Size(146, 51);
             this.skinButton2.TabIndex = 6;
             this.skinButton2.Text = "xóa";
-            this.skinButton2.UseVisualStyleBackColor = true;
+            this.skinButton2.UseVisualStyleBackColor = false;
             this.skinButton2.Click += new System.EventHandler(this.skinButton2_Click);
             // 
             // dataTable1BindingSource
@@ -188,10 +196,6 @@
             this.ds.DataSetName = "ds";
             this.ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // form3BindingSource
-            // 
-            this.form3BindingSource.DataSource = typeof(btth2.Form3);
-            // 
             // txt_address
             // 
             this.txt_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -203,6 +207,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 382);
             this.label3.Name = "label3";
@@ -221,6 +226,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(24, 463);
             this.label4.Name = "label4";
@@ -228,11 +234,42 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Số điện thoại:";
             // 
+            // form3BindingSource
+            // 
+            this.form3BindingSource.DataSource = typeof(btth2.Form3);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(867, 352);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(151, 32);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Tổng tiền:";
+            // 
+            // lbl_tong
+            // 
+            this.lbl_tong.AutoSize = true;
+            this.lbl_tong.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tong.ForeColor = System.Drawing.Color.Red;
+            this.lbl_tong.Location = new System.Drawing.Point(1036, 352);
+            this.lbl_tong.Name = "lbl_tong";
+            this.lbl_tong.Size = new System.Drawing.Size(31, 32);
+            this.lbl_tong.TabIndex = 12;
+            this.lbl_tong.Text = "0";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1258, 664);
+            this.Controls.Add(this.lbl_tong);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_phone);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_address);
@@ -245,6 +282,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.skinButton1);
             this.Controls.Add(this.dgv);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -282,5 +320,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_phone;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_tong;
     }
 }
