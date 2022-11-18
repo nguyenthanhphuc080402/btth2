@@ -1,4 +1,5 @@
-﻿using System;
+﻿using btth2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,9 +45,10 @@ namespace btth2
                 path = (string)item.Element("path");
                 price = (string)item.Element("price");
                 discription = (string)item.Element("discription");
-                lab_price.Text = price;
+                lab_price.Text = price+"đ";
                 //lab_price.Text = string.Format("{0:0.00}", price.TrimStart(new char[] { '0' }));
-                pic_1.BackgroundImage = Image.FromFile(@"..//..//img/" + XMLTag + "/" + path + ".jpg");
+                path = @"..//..//img/" + XMLTag + "/" + path + ".jpg";
+                pic_1.BackgroundImage = Image.FromFile(path);
                 lab_discription.Text = discription;
                 lab_name.Text = name;
                 this.Text = name;
@@ -111,6 +113,7 @@ namespace btth2
                 Form1.ShoppingInfo.GlobalName.Add(name);
                 Form1.ShoppingInfo.GlobalPrice.Add(price);
                 Form1.ShoppingInfo.GlobalQuantity.Add(sl);
+                Form1.ShoppingInfo.GlobalPath.Add(path);
             }
             else
             {
@@ -124,6 +127,69 @@ namespace btth2
         {
             Form3 page = new Form3();
             page.Show();
+        }
+
+        private void pb_str1_Click(object sender, EventArgs e)
+        {
+            //change yellow stars to white
+            pb_str2.Image = Resources.white_star;
+            pb_str3.Image = Resources.white_star;
+            pb_str4.Image = Resources.white_star;
+            pb_str5.Image = Resources.white_star;
+
+            pb_str1.Image = Resources.yellow_star;
+            lbl_core.Text = "1";
+        }
+
+        private void pb_str2_Click(object sender, EventArgs e)
+        {
+            //change yellow stars to white
+            pb_str3.Image = Resources.white_star;
+            pb_str4.Image = Resources.white_star;
+            pb_str5.Image = Resources.white_star;
+
+            pb_str1.Image = Resources.yellow_star;
+            pb_str2.Image = Resources.yellow_star;
+            lbl_core.Text = "2";
+        }
+
+        private void pb_str3_Click(object sender, EventArgs e)
+        {
+            //change yellow stars to white
+            pb_str4.Image = Resources.white_star;
+            pb_str5.Image = Resources.white_star;
+
+            pb_str1.Image = Resources.yellow_star;
+            pb_str2.Image = Resources.yellow_star;
+            pb_str3.Image = Resources.yellow_star;
+            lbl_core.Text = "3";
+        }
+
+        private void pb_str4_Click(object sender, EventArgs e)
+        {
+            //change yellow star to white
+            pb_str5.Image = Resources.white_star;
+
+            pb_str1.Image = Resources.yellow_star;
+            pb_str2.Image = Resources.yellow_star;
+            pb_str3.Image = Resources.yellow_star;
+            pb_str4.Image = Resources.yellow_star;
+            lbl_core.Text = "4";
+        }
+
+        private void pb_str5_Click(object sender, EventArgs e)
+        {
+            pb_str1.Image = Resources.yellow_star;
+            pb_str2.Image = Resources.yellow_star;
+            pb_str3.Image = Resources.yellow_star;
+            pb_str4.Image = Resources.yellow_star;
+            pb_str5.Image = Resources.yellow_star;
+            lbl_core.Text = "5";
+        }
+
+        private void lbl_core_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

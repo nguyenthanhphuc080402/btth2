@@ -25,6 +25,9 @@ namespace btth2
             private static List<string> Name = new List<string>();
             private static List<string> Price = new List<string>();
             private static List<int> Quantity = new List<int>();
+            private static List<int> Star = new List<int>();
+            private static List<string> Path = new List<string>();
+            private static List<string> Feedback = new List<string>();
 
             public static List<string> GlobalName
             {
@@ -59,6 +62,41 @@ namespace btth2
                 set
                 {
                     Quantity.Add(Int32.Parse(value.ToString()));
+                }
+            }
+            public static List<int> GlobalStar
+            {
+                get
+                {
+                    return GlobalStar;
+                }
+                set
+                {
+                    Star.Add(Int32.Parse(value.ToString()));
+                }
+            }
+
+            public static List<string> GlobalPath
+            {
+                get
+                {
+                    return Path;
+                }
+                set
+                {
+                    Path.Add(value.ToString());
+                }
+            }
+
+            public static List<string> GlobalFeedback
+            {
+                get
+                {
+                    return Feedback;
+                }
+                set
+                {
+                    Feedback.Add(value.ToString());
                 }
             }
         }

@@ -49,9 +49,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_phone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.form3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_tong = new System.Windows.Forms.Label();
+            this.form3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBindingSource)).BeginInit();
@@ -108,7 +108,7 @@
             this.skinButton1.Location = new System.Drawing.Point(980, 432);
             this.skinButton1.Name = "skinButton1";
             this.skinButton1.Size = new System.Drawing.Size(235, 69);
-            this.skinButton1.TabIndex = 1;
+            this.skinButton1.TabIndex = 4;
             this.skinButton1.Text = "Thanh Toán";
             this.skinButton1.UseVisualStyleBackColor = false;
             this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
@@ -156,7 +156,7 @@
             this.txt_name.Location = new System.Drawing.Point(333, 310);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(507, 30);
-            this.txt_name.TabIndex = 5;
+            this.txt_name.TabIndex = 0;
             // 
             // label2
             // 
@@ -176,7 +176,7 @@
             this.skinButton2.Location = new System.Drawing.Point(1031, 265);
             this.skinButton2.Name = "skinButton2";
             this.skinButton2.Size = new System.Drawing.Size(146, 51);
-            this.skinButton2.TabIndex = 6;
+            this.skinButton2.TabIndex = 3;
             this.skinButton2.Text = "xóa";
             this.skinButton2.UseVisualStyleBackColor = false;
             this.skinButton2.Click += new System.EventHandler(this.skinButton2_Click);
@@ -202,7 +202,7 @@
             this.txt_address.Location = new System.Drawing.Point(333, 379);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(507, 30);
-            this.txt_address.TabIndex = 8;
+            this.txt_address.TabIndex = 1;
             // 
             // label3
             // 
@@ -221,7 +221,7 @@
             this.txt_phone.Location = new System.Drawing.Point(333, 460);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(507, 30);
-            this.txt_phone.TabIndex = 10;
+            this.txt_phone.TabIndex = 2;
             // 
             // label4
             // 
@@ -233,10 +233,6 @@
             this.label4.Size = new System.Drawing.Size(132, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "Số điện thoại:";
-            // 
-            // form3BindingSource
-            // 
-            this.form3BindingSource.DataSource = typeof(btth2.Form3);
             // 
             // label5
             // 
@@ -260,6 +256,10 @@
             this.lbl_tong.Size = new System.Drawing.Size(31, 32);
             this.lbl_tong.TabIndex = 12;
             this.lbl_tong.Text = "0";
+            // 
+            // form3BindingSource
+            // 
+            this.form3BindingSource.DataSource = typeof(btth2.Form3);
             // 
             // Form3
             // 

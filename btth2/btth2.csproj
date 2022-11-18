@@ -106,7 +106,25 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
     <Compile Include="item.cs" />
+    <Compile Include="item_fb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="item_fb.Designer.cs">
+      <DependentUpon>item_fb.cs</DependentUpon>
+    </Compile>
     <Compile Include="orders.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,6 +141,15 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_fb.resx">
+      <DependentUpon>item_fb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -131,6 +158,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report2.rdlc" />
     <None Include="ds.xsc">
@@ -171,6 +199,16 @@
     <Content Include="img\background\7.png" />
     <Content Include="img\background\8.png" />
     <Content Include="img\background\9.png" />
+    <Content Include="img\icon\1.ico" />
+    <Content Include="img\icon\1.png" />
+    <Content Include="img\icon\2.png" />
+    <Content Include="img\icon\3.png" />
+    <Content Include="img\icon\4.png" />
+    <Content Include="img\icon\increase.svg" />
+    <Content Include="img\icon\white star.png" />
+    <Content Include="img\icon\yellow star.png" />
+    <None Include="Resources\white star.png" />
+    <None Include="Resources\yellow star.png" />
     <Content Include="xml\cart.xml" />
     <Content Include="color_radient.txt" />
     <Content Include="DotNetSkin.SkinControls.dll" />

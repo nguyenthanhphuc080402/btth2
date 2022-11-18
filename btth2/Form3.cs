@@ -95,7 +95,7 @@ namespace btth2
                 sd++;
                 tongAll += tong;
             }
-            lbl_tong.Text = tongAll.ToString();
+            lbl_tong.Text = tongAll.ToString()+"đ";
         }
         public item i = new item();
 
@@ -123,7 +123,7 @@ namespace btth2
             double price = Convert.ToDouble(dgv.Rows[rowIdex].Cells[2].Value.ToString());
             double sl = Convert.ToDouble(dgv.Rows[rowIdex].Cells[1].Value.ToString());
             tongAll = tongAll - price* sl;
-            lbl_tong.Text = tongAll.ToString();
+            lbl_tong.Text = tongAll.ToString()+"đ";
             int x = Form1.ShoppingInfo.GlobalName.IndexOf(name);
             Form1.ShoppingInfo.GlobalName.RemoveAt(x);
             Form1.ShoppingInfo.GlobalPrice.RemoveAt(x);

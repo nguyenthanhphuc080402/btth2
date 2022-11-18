@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pic_1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_count = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skinButton2 = new DotNetSkin.SkinControls.SkinButton();
@@ -42,12 +43,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lab_price = new System.Windows.Forms.Label();
             this.lab_name = new System.Windows.Forms.Label();
-            this.lbl_count = new System.Windows.Forms.Label();
+            this.pb_str5 = new System.Windows.Forms.PictureBox();
+            this.pb_str4 = new System.Windows.Forms.PictureBox();
+            this.pb_str3 = new System.Windows.Forms.PictureBox();
+            this.pb_str2 = new System.Windows.Forms.PictureBox();
+            this.pb_str1 = new System.Windows.Forms.PictureBox();
+            this.lbl_core = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +67,7 @@
             this.panel1.Controls.Add(this.pic_1);
             this.panel1.Location = new System.Drawing.Point(26, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(539, 512);
+            this.panel1.Size = new System.Drawing.Size(539, 454);
             this.panel1.TabIndex = 0;
             // 
             // pic_1
@@ -88,6 +99,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(645, 601);
             this.panel2.TabIndex = 1;
+            // 
+            // lbl_count
+            // 
+            this.lbl_count.AutoSize = true;
+            this.lbl_count.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_count.ForeColor = System.Drawing.Color.Red;
+            this.lbl_count.Location = new System.Drawing.Point(214, 489);
+            this.lbl_count.Name = "lbl_count";
+            this.lbl_count.Size = new System.Drawing.Size(40, 46);
+            this.lbl_count.TabIndex = 17;
+            this.lbl_count.Text = "4";
             // 
             // pictureBox2
             // 
@@ -197,16 +219,82 @@
             this.lab_name.TabIndex = 3;
             this.lab_name.Text = "Cà phê sữa đá";
             // 
-            // lbl_count
+            // pb_str5
             // 
-            this.lbl_count.AutoSize = true;
-            this.lbl_count.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_count.ForeColor = System.Drawing.Color.Red;
-            this.lbl_count.Location = new System.Drawing.Point(214, 489);
-            this.lbl_count.Name = "lbl_count";
-            this.lbl_count.Size = new System.Drawing.Size(40, 46);
-            this.lbl_count.TabIndex = 17;
-            this.lbl_count.Text = "4";
+            this.pb_str5.BackColor = System.Drawing.Color.Transparent;
+            this.pb_str5.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str5.Location = new System.Drawing.Point(374, 555);
+            this.pb_str5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pb_str5.Name = "pb_str5";
+            this.pb_str5.Size = new System.Drawing.Size(30, 30);
+            this.pb_str5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_str5.TabIndex = 12;
+            this.pb_str5.TabStop = false;
+            this.pb_str5.Click += new System.EventHandler(this.pb_str5_Click);
+            // 
+            // pb_str4
+            // 
+            this.pb_str4.BackColor = System.Drawing.Color.Transparent;
+            this.pb_str4.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str4.Location = new System.Drawing.Point(316, 555);
+            this.pb_str4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pb_str4.Name = "pb_str4";
+            this.pb_str4.Size = new System.Drawing.Size(30, 30);
+            this.pb_str4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_str4.TabIndex = 11;
+            this.pb_str4.TabStop = false;
+            this.pb_str4.Click += new System.EventHandler(this.pb_str4_Click);
+            // 
+            // pb_str3
+            // 
+            this.pb_str3.BackColor = System.Drawing.Color.Transparent;
+            this.pb_str3.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str3.Location = new System.Drawing.Point(262, 555);
+            this.pb_str3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pb_str3.Name = "pb_str3";
+            this.pb_str3.Size = new System.Drawing.Size(30, 30);
+            this.pb_str3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_str3.TabIndex = 10;
+            this.pb_str3.TabStop = false;
+            this.pb_str3.Click += new System.EventHandler(this.pb_str3_Click);
+            // 
+            // pb_str2
+            // 
+            this.pb_str2.BackColor = System.Drawing.Color.Transparent;
+            this.pb_str2.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str2.Location = new System.Drawing.Point(207, 555);
+            this.pb_str2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pb_str2.Name = "pb_str2";
+            this.pb_str2.Size = new System.Drawing.Size(30, 30);
+            this.pb_str2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_str2.TabIndex = 9;
+            this.pb_str2.TabStop = false;
+            this.pb_str2.Click += new System.EventHandler(this.pb_str2_Click);
+            // 
+            // pb_str1
+            // 
+            this.pb_str1.BackColor = System.Drawing.Color.Transparent;
+            this.pb_str1.Image = ((System.Drawing.Image)(resources.GetObject("pb_str1.Image")));
+            this.pb_str1.Location = new System.Drawing.Point(152, 555);
+            this.pb_str1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pb_str1.Name = "pb_str1";
+            this.pb_str1.Size = new System.Drawing.Size(30, 30);
+            this.pb_str1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_str1.TabIndex = 8;
+            this.pb_str1.TabStop = false;
+            this.pb_str1.Click += new System.EventHandler(this.pb_str1_Click);
+            // 
+            // lbl_core
+            // 
+            this.lbl_core.AutoSize = true;
+            this.lbl_core.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_core.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_core.Location = new System.Drawing.Point(446, 611);
+            this.lbl_core.Name = "lbl_core";
+            this.lbl_core.Size = new System.Drawing.Size(25, 29);
+            this.lbl_core.TabIndex = 16;
+            this.lbl_core.Text = "0";
+            this.lbl_core.Click += new System.EventHandler(this.lbl_core_Click);
             // 
             // Form2
             // 
@@ -214,6 +302,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1258, 664);
+            this.Controls.Add(this.lbl_core);
+            this.Controls.Add(this.pb_str5);
+            this.Controls.Add(this.pb_str4);
+            this.Controls.Add(this.pb_str3);
+            this.Controls.Add(this.pb_str2);
+            this.Controls.Add(this.pb_str1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -228,7 +322,13 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_str1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -248,5 +348,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbl_count;
+        private System.Windows.Forms.PictureBox pb_str5;
+        private System.Windows.Forms.PictureBox pb_str4;
+        private System.Windows.Forms.PictureBox pb_str3;
+        private System.Windows.Forms.PictureBox pb_str2;
+        private System.Windows.Forms.PictureBox pb_str1;
+        private System.Windows.Forms.Label lbl_core;
     }
 }

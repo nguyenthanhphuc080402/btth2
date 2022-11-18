@@ -70,5 +70,11 @@ namespace btth2
             LoadReportTest();
             this.reportViewer1.RefreshReport();
         }
+
+        private void Form4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form5 page = new Form5();
+            page.Show();
+        }
     }
 }
