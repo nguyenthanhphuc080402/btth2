@@ -54,4 +54,82 @@
     <quality>1</quality>
     <time>2022-11-18 4:07:01 PM</time>
   </item>
+  <item>
+    <name>Cà Phê Sữa Nóng</name>
+    <price>35000</price>
+    <quality>2</quality>
+    <time>2022-11-18 10:32:05 PM</time>
+  </item>
+  <item>
+    <name>Bạc Sỉu Nóng</name>
+    <price>35000</price>
+    <quality>1</quality>
+    <time>2022-11-18 10:44:16 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Xoài Aloe Vera</name>
+    <price>50000</price>
+    <quality>1</quality>
+    <time>2022-11-18 10:44:16 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Vải</name>
+    <price>50000</price>
+    <quality>1</quality>
+    <time>2022-11-18 10:44:16 PM</time>
+  </item>
+  <item>
+    <name>Trà Long Nhãn Hạt Sen</name>
+    <price>15000</price>
+    <quality>3</quality>
+    <time>2022-11-18 11:16:27 PM</time>
+  </item>
+  <item>
+    <name>Cà Phê Sữa Nóng</name>
+    <price>35000</price>
+    <quality>2</quality>
+    <time>2022-11-18 11:18:25 PM</time>
+  </item>
+  <item>
+    <name>Trà Long Nhãn Hạt Sen</name>
+    <price>15000</price>
+    <quality>2</quality>
+    <time>2022-11-18 11:22:05 PM</time>
+  </item>
+  <item>
+    <name>Trà Long Nhãn Hạt Sen</name>
+    <price>15000</price>
+    <quality>1</quality>
+    <time>2022-11-18 11:23:15 PM</time>
+  </item>
+  <item>
+    <name>Bánh Mì Que Pate Cay</name>
+    <price>15000</price>
+    <quality>2</quality>
+    <time>2022-11-18 11:23:51 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Vải</name>
+    <price>50000</price>
+    <quality>1</quality>
+    <time>2022-11-18 11:23:51 PM</time>
+  </item>
+  <item>
+    <name>Cà Phê Hòa Tan Đậm Vị Việt Túi 40x16G</name>
+    <price>100000</price>
+    <quality>1</quality>
+    <time>2022-11-18 11:23:51 PM</time>
+  </item>
+  <item>
+    <name>Cà Phê Hoà Tan Đậm Vị Việt (18 gói x 16 gam)</name>
+    <price>50000</price>
+    <quality>1</quality>
+    <time>2022-11-18 11:23:51 PM</time>
+  </item>
+  <item>
+    <name>Combo 6 Lon Cà Phê Sữa Espresso</name>
+    <price>84000</price>
+    <quality>1</quality>
+    <time>2022-11-18 11:23:51 PM</time>
+  </item>
 </cart>

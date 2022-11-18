@@ -15,4 +15,29 @@
     <star>4</star>
     <feedback>d</feedback>
   </item>
+  <item>
+    <name>Cà Phê Sữa Nóng</name>
+    <star>2</star>
+    <feedback>a</feedback>
+  </item>
+  <item>
+    <name>Bạc Sỉu Nóng</name>
+    <star>2</star>
+    <feedback>s</feedback>
+  </item>
+  <item>
+    <name>Hi-Tea Xoài Aloe Vera</name>
+    <star>3</star>
+    <feedback>f</feedback>
+  </item>
+  <item>
+    <name>Hi-Tea Vải</name>
+    <star>4</star>
+    <feedback>f</feedback>
+  </item>
+  <item>
+    <name>Trà Long Nhãn Hạt Sen</name>
+    <star>4</star>
+    <feedback>d</feedback>
+  </item>
 </cart>

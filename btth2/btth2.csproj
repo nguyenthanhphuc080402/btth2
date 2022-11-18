@@ -213,9 +213,10 @@
     <Content Include="img\icon\2.png" />
     <Content Include="img\icon\3.png" />
     <Content Include="img\icon\4.png" />
-    <Content Include="img\icon\increase.svg" />
     <Content Include="img\icon\white star.png" />
+    <Content Include="img\icon\white_star.png" />
     <Content Include="img\icon\yellow star.png" />
+    <Content Include="img\icon\yellow_star.png" />
     <Content Include="xml\history.xml" />
     <None Include="Resources\white star.png" />
     <None Include="Resources\yellow star.png" />

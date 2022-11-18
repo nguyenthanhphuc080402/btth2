@@ -222,7 +222,7 @@
             // pb_str5
             // 
             this.pb_str5.BackColor = System.Drawing.Color.Transparent;
-            this.pb_str5.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str5.Image = ((System.Drawing.Image)(resources.GetObject("pb_str5.Image")));
             this.pb_str5.Location = new System.Drawing.Point(374, 555);
             this.pb_str5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str5.Name = "pb_str5";
@@ -234,7 +234,7 @@
             // pb_str4
             // 
             this.pb_str4.BackColor = System.Drawing.Color.Transparent;
-            this.pb_str4.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str4.Image = ((System.Drawing.Image)(resources.GetObject("pb_str4.Image")));
             this.pb_str4.Location = new System.Drawing.Point(316, 555);
             this.pb_str4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str4.Name = "pb_str4";
@@ -246,7 +246,7 @@
             // pb_str3
             // 
             this.pb_str3.BackColor = System.Drawing.Color.Transparent;
-            this.pb_str3.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str3.Image = ((System.Drawing.Image)(resources.GetObject("pb_str3.Image")));
             this.pb_str3.Location = new System.Drawing.Point(262, 555);
             this.pb_str3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str3.Name = "pb_str3";
@@ -258,7 +258,7 @@
             // pb_str2
             // 
             this.pb_str2.BackColor = System.Drawing.Color.Transparent;
-            this.pb_str2.Image = global::btth2.Properties.Resources.white_star;
+            this.pb_str2.Image = ((System.Drawing.Image)(resources.GetObject("pb_str2.Image")));
             this.pb_str2.Location = new System.Drawing.Point(207, 555);
             this.pb_str2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str2.Name = "pb_str2";

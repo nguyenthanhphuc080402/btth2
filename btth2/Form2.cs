@@ -40,50 +40,50 @@ namespace btth2
             switch (star)
             {
                 case 1:
-                    pb_str2.Image = Resources.white_star;
-                    pb_str3.Image = Resources.white_star;
-                    pb_str4.Image = Resources.white_star;
-                    pb_str5.Image = Resources.white_star;
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
 
-                    pb_str1.Image = Resources.yellow_star;
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
                     lbl_core.Text = "1/5";
                     break;
                 case 2:
                     //change yellow stars to white
-                    pb_str3.Image = Resources.white_star;
-                    pb_str4.Image = Resources.white_star;
-                    pb_str5.Image = Resources.white_star;
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
 
-                    pb_str1.Image = Resources.yellow_star;
-                    pb_str2.Image = Resources.yellow_star;
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
                     lbl_core.Text = "2/5";
                     break;
                 case 3:
                     //change yellow stars to white
-                    pb_str4.Image = Resources.white_star;
-                    pb_str5.Image = Resources.white_star;
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
 
-                    pb_str1.Image = Resources.yellow_star;
-                    pb_str2.Image = Resources.yellow_star;
-                    pb_str3.Image = Resources.yellow_star;
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
                     lbl_core.Text = "3/5";
                     break;
                 case 4:
                     //change yellow star to white
-                    pb_str5.Image = Resources.white_star;
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
 
-                    pb_str1.Image = Resources.yellow_star;
-                    pb_str2.Image = Resources.yellow_star;
-                    pb_str3.Image = Resources.yellow_star;
-                    pb_str4.Image = Resources.yellow_star;
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
                     lbl_core.Text = "4/5";
                     break;
                 case 5:
-                    pb_str1.Image = Resources.yellow_star;
-                    pb_str2.Image = Resources.yellow_star;
-                    pb_str3.Image = Resources.yellow_star;
-                    pb_str4.Image = Resources.yellow_star;
-                    pb_str5.Image = Resources.yellow_star;
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
                     lbl_core.Text = "5/5";
                     break;
                 default:

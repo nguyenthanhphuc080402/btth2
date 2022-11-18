@@ -233,5 +233,11 @@ namespace btth2
             loadCategory("tea");
             tag = "tea";
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form7 page = new Form7();
+            page.Show();
+        }
     }
 }

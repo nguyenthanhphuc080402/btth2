@@ -25,10 +25,27 @@ namespace btth2
             root = doc.DocumentElement;
         }
 
+        void StyleDatagridview()
+        {
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            dgv.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgv.BackgroundColor = Color.FromArgb(30, 30, 30);
+            dgv.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(124, 63, 5);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        }
+
         private void Form7_Load(object sender, EventArgs e)
         {
-            dgv.EnableHeadersVisualStyles = false;
-            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(137, 212, 238);
+            //dgv.EnableHeadersVisualStyles = false;
+            //dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(137, 212, 238);
+            StyleDatagridview();
             dgv.Rows.Clear();
             dgv.ColumnCount = 4;
 
@@ -47,7 +64,6 @@ namespace btth2
 
         private void Form7_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
         }
     }
 }

@@ -72,6 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(504, 175);
             this.label1.Name = "label1";
@@ -82,6 +83,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(726, 101);
             this.label2.Name = "label2";
@@ -92,6 +94,7 @@
             // lbl_Name
             // 
             this.lbl_Name.AutoSize = true;
+            this.lbl_Name.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Name.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Name.Location = new System.Drawing.Point(55, 348);
             this.lbl_Name.Name = "lbl_Name";
@@ -175,19 +178,21 @@
             // 
             // skinButton1
             // 
+            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
             this.skinButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.skinButton1.Location = new System.Drawing.Point(651, 373);
             this.skinButton1.Name = "skinButton1";
             this.skinButton1.Size = new System.Drawing.Size(110, 42);
             this.skinButton1.TabIndex = 28;
             this.skinButton1.Text = "Lưu";
-            this.skinButton1.UseVisualStyleBackColor = true;
+            this.skinButton1.UseVisualStyleBackColor = false;
             this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
             // item_fb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.skinButton1);
             this.Controls.Add(this.lbl_Name);
             this.Controls.Add(this.label2);
