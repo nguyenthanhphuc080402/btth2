@@ -21,7 +21,7 @@ namespace btth2
         {
             for (int i = 0; i < Form1.ShoppingInfo.GlobalName.Count; i++)
             {
-                item_fb x = new item_fb();
+                item_fb x = new item_fb(i);
                 x.ItemImage = Image.FromFile(Form1.ShoppingInfo.GlobalPath[i]);
                 x.ItemName = Form1.ShoppingInfo.GlobalName[i];
                 flowLayoutPanel1.Controls.Add(x);

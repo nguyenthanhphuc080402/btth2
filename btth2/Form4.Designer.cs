@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(1186, 563);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Receipt";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form4_FormClosed);
             this.Load += new System.EventHandler(this.Form4_Load);

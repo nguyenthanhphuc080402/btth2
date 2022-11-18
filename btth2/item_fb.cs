@@ -13,9 +13,11 @@ namespace btth2
 {
     public partial class item_fb : UserControl
     {
-        public item_fb(int idex)
+        int index = 0;
+        public item_fb(int i)
         {
             InitializeComponent();
+            index = i;
         }
 
         public Image ItemImage
@@ -102,7 +104,8 @@ namespace btth2
 
         private void skinButton1_Click(object sender, EventArgs e)
         {
-
+            Form1.ShoppingInfo.GlobalStar[index] = Convert.ToInt32(lbl_core.Text);
+            Form1.ShoppingInfo.GlobalFeedback[index] = richTextBox1.Text;
         }
     }
 }
