@@ -15,15 +15,15 @@ namespace btth2
 {
     public partial class Form3 : Form
     {
-        public XmlDocument doc = new XmlDocument();
-        public XmlElement root;
-        private string fileName = @"..//..//xml/cart.xml";
+        //public XmlDocument doc = new XmlDocument();
+        //public XmlElement root;
+        //private string fileName = @"..//..//xml/feedback.xml";
         private double tongAll = 0;
         public Form3()
         {
             InitializeComponent();
-            doc.Load(fileName);
-            root = doc.DocumentElement;
+            //doc.Load(fileName);
+            //root = doc.DocumentElement;
         }
 
         public static class info
@@ -114,6 +114,8 @@ namespace btth2
             {
                 MessageBox.Show("Không tồn tại đơn hàng trong giỏ.");
             }
+
+
         }
 
         private void skinButton2_Click(object sender, EventArgs e)

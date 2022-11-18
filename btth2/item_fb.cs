@@ -101,11 +101,20 @@ namespace btth2
             pb_str5.Image = Resources.yellow_star;
             lbl_core.Text = "5";
         }
-
+        //public item i = new item();
+        //public orders o = new orders();
         private void skinButton1_Click(object sender, EventArgs e)
         {
-            Form1.ShoppingInfo.GlobalStar[index] = Convert.ToInt32(lbl_core.Text);
-            Form1.ShoppingInfo.GlobalFeedback[index] = richTextBox1.Text;
-        }
+            item i = new item();
+            orders o = new orders();
+            //Form1.ShoppingInfo.GlobalStar[index] = Convert.ToInt32(lbl_core.Text);
+            //Form1.ShoppingInfo.GlobalFeedback[index] = richTextBox1.Text;
+            o.Name = this.ItemName;
+            o.Feedback = richTextBox1.Text;
+            o.Star = lbl_core.Text;
+            i.Them(o);
+            MessageBox.Show("Đã gửi nhận xét. Thanks \t٩(๑❛ᴗ❛๑)۶");
+            skinButton1.Enabled = false;
+    }
     }
 }

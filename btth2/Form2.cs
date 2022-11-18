@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,6 +35,62 @@ namespace btth2
             InitializeComponent();
         }
 
+        public void loadFeeadback(int star, string textFback)
+        {
+            switch (star)
+            {
+                case 1:
+                    pb_str2.Image = Resources.white_star;
+                    pb_str3.Image = Resources.white_star;
+                    pb_str4.Image = Resources.white_star;
+                    pb_str5.Image = Resources.white_star;
+
+                    pb_str1.Image = Resources.yellow_star;
+                    lbl_core.Text = "1/5";
+                    break;
+                case 2:
+                    //change yellow stars to white
+                    pb_str3.Image = Resources.white_star;
+                    pb_str4.Image = Resources.white_star;
+                    pb_str5.Image = Resources.white_star;
+
+                    pb_str1.Image = Resources.yellow_star;
+                    pb_str2.Image = Resources.yellow_star;
+                    lbl_core.Text = "2/5";
+                    break;
+                case 3:
+                    //change yellow stars to white
+                    pb_str4.Image = Resources.white_star;
+                    pb_str5.Image = Resources.white_star;
+
+                    pb_str1.Image = Resources.yellow_star;
+                    pb_str2.Image = Resources.yellow_star;
+                    pb_str3.Image = Resources.yellow_star;
+                    lbl_core.Text = "3/5";
+                    break;
+                case 4:
+                    //change yellow star to white
+                    pb_str5.Image = Resources.white_star;
+
+                    pb_str1.Image = Resources.yellow_star;
+                    pb_str2.Image = Resources.yellow_star;
+                    pb_str3.Image = Resources.yellow_star;
+                    pb_str4.Image = Resources.yellow_star;
+                    lbl_core.Text = "4/5";
+                    break;
+                case 5:
+                    pb_str1.Image = Resources.yellow_star;
+                    pb_str2.Image = Resources.yellow_star;
+                    pb_str3.Image = Resources.yellow_star;
+                    pb_str4.Image = Resources.yellow_star;
+                    pb_str5.Image = Resources.yellow_star;
+                    lbl_core.Text = "5/5";
+                    break;
+                default:
+                    break;
+            }
+        }
+
         public void loadCategory(string XMLTag, int stt)
         {
             var xmlDoc = XDocument.Load(@"..//..//xml/data.xml");
@@ -53,6 +110,30 @@ namespace btth2
                 lab_name.Text = name;
                 this.Text = name;
             }
+
+            var xml = new XmlDocument(); 
+            xml.Load(@"..//..//xml/feedback.xml");
+            XmlNodeList nodeList = xml.SelectNodes("/cart"+"/item");
+            string nameFback = "";
+            string starFback = "";
+            string textFback = "";
+            for (int i = 0; i < nodeList.Count; i++)
+            {
+                nameFback = nodeList[i].SelectSingleNode("name").InnerText.Trim();
+
+                if (nameFback == name)
+                {
+                    starFback = nodeList[i].SelectSingleNode("star").InnerText.Trim();
+                    textFback = nodeList[i].SelectSingleNode("feedback").InnerText.Trim();
+                    loadFeeadback(Convert.ToInt32(starFback), textFback);
+                    break;
+                }
+                else
+                {
+                    lbl_core.Text = "Chưa có đánh giá";
+                }
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -127,69 +208,6 @@ namespace btth2
         {
             Form3 page = new Form3();
             page.Show();
-        }
-
-        private void pb_str1_Click(object sender, EventArgs e)
-        {
-            //change yellow stars to white
-            pb_str2.Image = Resources.white_star;
-            pb_str3.Image = Resources.white_star;
-            pb_str4.Image = Resources.white_star;
-            pb_str5.Image = Resources.white_star;
-
-            pb_str1.Image = Resources.yellow_star;
-            lbl_core.Text = "1";
-        }
-
-        private void pb_str2_Click(object sender, EventArgs e)
-        {
-            //change yellow stars to white
-            pb_str3.Image = Resources.white_star;
-            pb_str4.Image = Resources.white_star;
-            pb_str5.Image = Resources.white_star;
-
-            pb_str1.Image = Resources.yellow_star;
-            pb_str2.Image = Resources.yellow_star;
-            lbl_core.Text = "2";
-        }
-
-        private void pb_str3_Click(object sender, EventArgs e)
-        {
-            //change yellow stars to white
-            pb_str4.Image = Resources.white_star;
-            pb_str5.Image = Resources.white_star;
-
-            pb_str1.Image = Resources.yellow_star;
-            pb_str2.Image = Resources.yellow_star;
-            pb_str3.Image = Resources.yellow_star;
-            lbl_core.Text = "3";
-        }
-
-        private void pb_str4_Click(object sender, EventArgs e)
-        {
-            //change yellow star to white
-            pb_str5.Image = Resources.white_star;
-
-            pb_str1.Image = Resources.yellow_star;
-            pb_str2.Image = Resources.yellow_star;
-            pb_str3.Image = Resources.yellow_star;
-            pb_str4.Image = Resources.yellow_star;
-            lbl_core.Text = "4";
-        }
-
-        private void pb_str5_Click(object sender, EventArgs e)
-        {
-            pb_str1.Image = Resources.yellow_star;
-            pb_str2.Image = Resources.yellow_star;
-            pb_str3.Image = Resources.yellow_star;
-            pb_str4.Image = Resources.yellow_star;
-            pb_str5.Image = Resources.yellow_star;
-            lbl_core.Text = "5";
-        }
-
-        private void lbl_core_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

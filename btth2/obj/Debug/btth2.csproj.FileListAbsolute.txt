@@ -137,3 +137,4 @@ C:\Users\LENOVO\Desktop\btth2\btth2\obj\Debug\btth2.pdb
 C:\Users\LENOVO\Desktop\btth2\btth2\obj\Debug\btth2.Form5.resources
 C:\Users\LENOVO\Desktop\btth2\btth2\obj\Debug\btth2.Form6.resources
 C:\Users\LENOVO\Desktop\btth2\btth2\obj\Debug\btth2.item_fb.resources
+C:\Users\LENOVO\Desktop\btth2\btth2\obj\Debug\btth2.Form7.resources

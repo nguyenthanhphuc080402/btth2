@@ -13,7 +13,7 @@ namespace btth2
     {
         public XmlDocument doc = new XmlDocument();
         public XmlElement root;
-        private string fileName = @"..//..//xml/cart.xml";
+        private string fileName = @"..//..//xml/feedback.xml";
         public item()
         {
             doc.Load(fileName);
@@ -25,15 +25,15 @@ namespace btth2
             XmlNode item = doc.CreateElement("item");
 
             XmlElement Name_ = doc.CreateElement("name");
-            Name_.InnerText = order.name;
+            Name_.InnerText = order.Name;
             item.AppendChild(Name_);
 
-            XmlElement Price_ = doc.CreateElement("price");
-            Price_.InnerText = order.price.ToString();
+            XmlElement Price_ = doc.CreateElement("star");
+            Price_.InnerText = order.Star.ToString();
             item.AppendChild(Price_);
 
-            XmlElement Sl_ = doc.CreateElement("sl");
-            Sl_.InnerText = order.sl.ToString();
+            XmlElement Sl_ = doc.CreateElement("feedback");
+            Sl_.InnerText = order.Feedback.ToString();
             item.AppendChild(Sl_);
 
             root.AppendChild(item);

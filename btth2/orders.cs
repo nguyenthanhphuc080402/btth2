@@ -8,12 +8,12 @@ namespace btth2
 {
     public class orders
     {
-        public string name;
-        public string sl;
-        public string price;
+        private string name;
+        private string star;
+        private string feedback;
 
         public string Name { get => name; set => name = value; }
-        public string Sl { get => sl; set => sl = value; }
-        public string Price { get => price; set => price = value; }
+        public string Star { get => star; set => star = value; }
+        public string Feedback { get => feedback; set => feedback = value; }
     }
 }

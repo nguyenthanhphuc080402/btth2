@@ -168,7 +168,7 @@
             // lab_discription
             // 
             this.lab_discription.CausesValidation = false;
-            this.lab_discription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_discription.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_discription.ForeColor = System.Drawing.Color.Black;
             this.lab_discription.Location = new System.Drawing.Point(41, 314);
             this.lab_discription.Name = "lab_discription";
@@ -179,7 +179,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(41, 122);
             this.label2.Name = "label2";
@@ -189,7 +189,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(41, 188);
             this.label1.Name = "label1";
@@ -200,7 +200,7 @@
             // 
             // lab_price
             // 
-            this.lab_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_price.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_price.ForeColor = System.Drawing.Color.Black;
             this.lab_price.Location = new System.Drawing.Point(377, 122);
             this.lab_price.Name = "lab_price";
@@ -211,11 +211,11 @@
             // lab_name
             // 
             this.lab_name.AutoSize = true;
-            this.lab_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_name.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lab_name.Location = new System.Drawing.Point(41, 28);
             this.lab_name.Name = "lab_name";
-            this.lab_name.Size = new System.Drawing.Size(317, 52);
+            this.lab_name.Size = new System.Drawing.Size(283, 54);
             this.lab_name.TabIndex = 3;
             this.lab_name.Text = "Cà phê sữa đá";
             // 
@@ -230,7 +230,6 @@
             this.pb_str5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_str5.TabIndex = 12;
             this.pb_str5.TabStop = false;
-            this.pb_str5.Click += new System.EventHandler(this.pb_str5_Click);
             // 
             // pb_str4
             // 
@@ -243,7 +242,6 @@
             this.pb_str4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_str4.TabIndex = 11;
             this.pb_str4.TabStop = false;
-            this.pb_str4.Click += new System.EventHandler(this.pb_str4_Click);
             // 
             // pb_str3
             // 
@@ -256,7 +254,6 @@
             this.pb_str3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_str3.TabIndex = 10;
             this.pb_str3.TabStop = false;
-            this.pb_str3.Click += new System.EventHandler(this.pb_str3_Click);
             // 
             // pb_str2
             // 
@@ -269,7 +266,6 @@
             this.pb_str2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_str2.TabIndex = 9;
             this.pb_str2.TabStop = false;
-            this.pb_str2.Click += new System.EventHandler(this.pb_str2_Click);
             // 
             // pb_str1
             // 
@@ -282,7 +278,6 @@
             this.pb_str1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_str1.TabIndex = 8;
             this.pb_str1.TabStop = false;
-            this.pb_str1.Click += new System.EventHandler(this.pb_str1_Click);
             // 
             // lbl_core
             // 
@@ -294,7 +289,6 @@
             this.lbl_core.Size = new System.Drawing.Size(25, 29);
             this.lbl_core.TabIndex = 16;
             this.lbl_core.Text = "0";
-            this.lbl_core.Click += new System.EventHandler(this.lbl_core_Click);
             // 
             // Form2
             // 

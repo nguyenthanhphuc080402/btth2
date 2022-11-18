@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cart>
+  <item>
+    <name>Cà Phê Sữa Nóng</name>
+    <star>3</star>
+    <feedback>a</feedback>
+  </item>
+  <item>
+    <name>Hi-Tea Vải</name>
+    <star>5</star>
+    <feedback>b</feedback>
+  </item>
+  <item>
+    <name>Trà Long Nhãn Hạt Sen</name>
+    <star>4</star>
+    <feedback>c</feedback>
+  </item>
+  <item>
+    <name>Bạc Sỉu Nóng</name>
+    <star>3</star>
+    <feedback>as</feedback>
+  </item>
+</cart>
