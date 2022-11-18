@@ -284,11 +284,11 @@
             this.lbl_core.AutoSize = true;
             this.lbl_core.BackColor = System.Drawing.Color.Transparent;
             this.lbl_core.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_core.Location = new System.Drawing.Point(446, 611);
+            this.lbl_core.Location = new System.Drawing.Point(401, 611);
             this.lbl_core.Name = "lbl_core";
-            this.lbl_core.Size = new System.Drawing.Size(25, 29);
+            this.lbl_core.Size = new System.Drawing.Size(183, 29);
             this.lbl_core.TabIndex = 16;
-            this.lbl_core.Text = "0";
+            this.lbl_core.Text = "Chưa có đánh giá";
             // 
             // Form2
             // 

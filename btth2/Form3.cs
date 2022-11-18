@@ -98,7 +98,36 @@ namespace btth2
             lbl_tong.Text = tongAll.ToString()+"đ";
         }
         public item i = new item();
+        public XmlDocument doc = new XmlDocument();
+        public XmlElement root;
+        private string fileName = @"..//..//xml/history.xml";
 
+        public void Add(string a, string b, string c, string d)
+        {
+            doc.Load(fileName);
+            root = doc.DocumentElement;
+
+            XmlNode item = doc.CreateElement("item");
+
+            XmlElement Name_ = doc.CreateElement("name");
+            Name_.InnerText = a;
+            item.AppendChild(Name_);
+
+            XmlElement Price_ = doc.CreateElement("price");
+            Price_.InnerText = c;
+            item.AppendChild(Price_);
+
+            XmlElement Sl_ = doc.CreateElement("quality");
+            Sl_.InnerText = b;
+            item.AppendChild(Sl_);
+
+            XmlElement Time_ = doc.CreateElement("time");
+            Time_.InnerText = d;
+            item.AppendChild(Time_);
+
+            root.AppendChild(item);
+            doc.Save(fileName);
+        }
         private void skinButton1_Click(object sender, EventArgs e)
         {
             info.GlobalName = txt_name.Text;
@@ -114,7 +143,11 @@ namespace btth2
             {
                 MessageBox.Show("Không tồn tại đơn hàng trong giỏ.");
             }
-
+            // add đơn hàng vào file xml lịch sử.
+            for(int i= 0; i< Form1.ShoppingInfo.GlobalName.Count; i++)
+            {
+                Add(Form1.ShoppingInfo.GlobalName[i], Convert.ToString(Form1.ShoppingInfo.GlobalQuantity[i]), Form1.ShoppingInfo.GlobalPrice[i], DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"));
+            }
 
         }
 
@@ -131,7 +164,7 @@ namespace btth2
             Form1.ShoppingInfo.GlobalPrice.RemoveAt(x);
             Form1.ShoppingInfo.GlobalQuantity.RemoveAt(x);
             dgv.Rows.RemoveAt(rowIdex);
-            MessageBox.Show("Đã xóa " + name + " ra khỏi giỏ hàng.");
+            //MessageBox.Show("Đã xóa " + name + " ra khỏi giỏ hàng.");
         }
     }
 }

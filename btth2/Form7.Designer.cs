@@ -54,6 +54,7 @@
             // 
             this.dgv.AllowUserToAddRows = false;
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgv.CausesValidation = false;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -62,7 +63,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgv.Location = new System.Drawing.Point(12, 175);
+            this.dgv.Location = new System.Drawing.Point(12, 192);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 62;
             this.dgv.RowTemplate.Height = 28;
@@ -103,6 +104,8 @@
             this.Name = "Form7";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form7_FormClosed);
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.pan_1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);

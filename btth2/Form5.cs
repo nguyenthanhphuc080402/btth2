@@ -25,7 +25,8 @@ namespace btth2
 
         private void btn_his_Click(object sender, EventArgs e)
         {
-
+            Form7 page = new Form7();
+            page.Show();
         }
     }
 }

@@ -1,4 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <cart>
-	
+  <item>
+    <name>Bánh Mì Que Pate Cay</name>
+    <price>15000</price>
+    <quality>3</quality>
+    <time>2022-11-18 3:44:03 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Xoài Aloe Vera</name>
+    <price>50000</price>
+    <quality>4</quality>
+    <time>2022-11-18 3:44:03 PM</time>
+  </item>
+  <item>
+    <name>Trà Long Nhãn Hạt Sen</name>
+    <price>15000</price>
+    <quality>7</quality>
+    <time>2022-11-18 3:49:18 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Xoài Aloe Vera</name>
+    <price>50000</price>
+    <quality>1</quality>
+    <time>2022-11-18 3:49:18 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Vải</name>
+    <price>50000</price>
+    <quality>1</quality>
+    <time>2022-11-18 3:49:18 PM</time>
+  </item>
+  <item>
+    <name>Cà Phê Sữa Nóng</name>
+    <price>35000</price>
+    <quality>3</quality>
+    <time>2022-11-18 3:55:54 PM</time>
+  </item>
+  <item>
+    <name>Hi-Tea Xoài Aloe Vera</name>
+    <price>50000</price>
+    <quality>2</quality>
+    <time>2022-11-18 3:55:54 PM</time>
+  </item>
+  <item>
+    <name>Cà Phê Sữa Đá Hòa Tan (10 gói x 22g)</name>
+    <price>44000</price>
+    <quality>2</quality>
+    <time>2022-11-18 3:55:54 PM</time>
+  </item>
+  <item>
+    <name>Cà Phê Sữa Nóng</name>
+    <price>35000</price>
+    <quality>1</quality>
+    <time>2022-11-18 4:07:01 PM</time>
+  </item>
 </cart>

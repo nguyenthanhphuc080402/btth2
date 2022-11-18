@@ -112,7 +112,12 @@ namespace btth2
             o.Name = this.ItemName;
             o.Feedback = richTextBox1.Text;
             o.Star = lbl_core.Text;
-            i.Them(o);
+            var tag = new List<string>();
+            tag.Add("name");
+            tag.Add("star");
+            tag.Add("feedback");
+            //i.Them(o, tag);
+            i.Them(o, "name", "star", "feedback");
             MessageBox.Show("Đã gửi nhận xét. Thanks \t٩(๑❛ᴗ❛๑)۶");
             skinButton1.Enabled = false;
     }

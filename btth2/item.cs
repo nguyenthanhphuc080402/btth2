@@ -20,19 +20,19 @@ namespace btth2
             root = doc.DocumentElement;
         }
 
-        public void Them(orders order)
+        public void Them(orders order, string a, string b, string c)
         {
             XmlNode item = doc.CreateElement("item");
 
-            XmlElement Name_ = doc.CreateElement("name");
+            XmlElement Name_ = doc.CreateElement(a);
             Name_.InnerText = order.Name;
             item.AppendChild(Name_);
 
-            XmlElement Price_ = doc.CreateElement("star");
+            XmlElement Price_ = doc.CreateElement(b);
             Price_.InnerText = order.Star.ToString();
             item.AppendChild(Price_);
 
-            XmlElement Sl_ = doc.CreateElement("feedback");
+            XmlElement Sl_ = doc.CreateElement(c);
             Sl_.InnerText = order.Feedback.ToString();
             item.AppendChild(Sl_);
 
